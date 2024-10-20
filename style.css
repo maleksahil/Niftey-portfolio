@@ -11,6 +11,8 @@ body{
     display: flex;
     justify-content: center;
     font-family: "Rajdhani", sans-serif;
+    background-image: url("./images/bg-hero-home.png");
+    background-size: cover;
 }
 
 .main{
@@ -352,9 +354,6 @@ nav{
     grid-gap: 50px;
 }
 
-.partners_logo img{
-    /* border: 1px solid white; */
-}
 
 @media screen and (max-width:768px){
     .partners_logo{
@@ -369,8 +368,8 @@ nav{
         grid-template-columns: 100px;
         grid-template-rows: repeat(5,30px);
         padding: 20px;
-        margin-left: 35%;
-    }
+        padding-left: 35%;
+      }
 }
 /* our partners end */
 
@@ -455,14 +454,8 @@ nav{
 .nifty_button button i{
     margin-right: 20px;
 }
-.nifty_story_text span{
-    /* border: 1px solid white; */
-}
 
 
-.nifty_story_text .nifty_button{
-    /* border: 1px solid white; */
-}
 @media screen and (width<1100px){
     #story{
         font-size: 2rem;
@@ -647,7 +640,7 @@ nav{
     justify-content: space-between;
     margin-top: 20px;
     width: 90%;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 @media screen and (width<768px){
@@ -695,15 +688,10 @@ nav{
         grid-column: 1/5;
         grid-row: 1/2;  
     }
-    .nifty_roadmap_card_text2{
-        /* display: none; */
-    }
+  
 }
 
-.nifty_roadmap_card{
-    /* border: 1px solid white; */
-    border-radius: 10px;
-}
+
 
 .item-3{
     grid-column: 3/4;
@@ -714,7 +702,14 @@ nav{
     display: flex;
     flex-direction: column;
     padding: 20px;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
 }
 
 
@@ -743,7 +738,8 @@ nav{
     color: white;
     display: grid;
     place-items: center;
-    font-size: 0.8rem;
+    /* font-size: 0.1rem; */
+    margin-left: 15px;
 }
 
 .nifty_roadmap_card_text2{
@@ -757,3 +753,710 @@ nav{
     color: rgb(184, 184, 184);
 }
 
+/* nifty inquiry */
+
+.nifty_inquiry{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    /* border: 1px solid white; */
+    margin-top: 100px;
+}
+
+
+.nifty_inquiry_left{
+    /* border: 1px solid white; */
+    height: 100%;
+    width: 30%;
+}
+.nifty_inqury_text1{
+    width: 100%;
+    color: #FEAD10;
+    font-size: 1.2rem;
+}
+
+.nifty_inqury_text2{
+    color: white;
+    font-size: 3rem;
+    font-family: "Rajdhani", sans-serif;
+    margin-top: 20px;
+}
+
+.nifty_inqury_text3{
+    color: gray;
+    font-size: 1.5rem;
+    margin-top: 50px;
+}
+
+.nifty_inquiry_right{
+    /* border: 1px solid white; */
+    height: 100%;
+    width: 70%;
+    padding: 20px;
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+
+@media screen and (width<768px){
+    .nifty_inquiry{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .nifty_inquiry_left{
+        width: 100%;
+        /* border: 1px solid white; */
+    }
+
+    .nifty_inquiry_right{
+        width: 100%;
+        margin-top: 100px;
+    }
+}
+
+/* nifty team */
+
+.nifty_team1{
+    /* border: 1px solid white; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #FEAD10;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 100px;
+}
+.nifty_team2{
+    /* border: 1px solid white; */
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 5rem;
+}
+.nifty_team3{
+    /* border: 1px solid white; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: rgb(158, 154, 154);
+    padding: 0px;
+}
+
+.nifty_team_cards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 500px;
+    /* border: 1px solid white; */
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.nifty_team_card{
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 10px;
+}
+
+.nifty_team_card_profile{
+    width: 100%;
+    height: 65%;
+    /* border: 1px solid white; */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.nifty_team_card_text{
+    width: 100%;
+    height: 30%;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-color: #1f042e;
+    padding: 20px;
+
+}
+
+.nifty_team_card_text div{
+    width: 100%;
+    /* border: 1px solid white; */
+    color: white;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 5px;
+
+}
+
+p{
+    margin: 0px;
+}
+
+.nifty_team_card_text div i{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #AB17DF;
+    display: grid;
+    place-items: center;
+    color: white;
+    margin-left: 10px;
+}
+
+@media screen and (width<768px){
+    .nifty_team_cards{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,500px);
+    }
+
+    .nifty_team1{
+        margin-top: 800px;
+    }
+}
+
+@media screen and (width<500px){
+    .nifty_team_cards{
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4,500px);
+    }
+}
+
+.nifty_review{
+    width: 100%;
+    /* border: 1px solid white; */
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nifty_review_left{
+    width: 40%;
+    height: 100%;
+    /* border: 1px solid white; */
+}
+
+.nifty_review_right{
+    width: 60%;
+    height: 100%;
+    /* border: 1px solid white; */
+}
+
+
+.nifty_review_pictures{
+    width: 90%;
+    height: 250px;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.nifty_review_pictures div{
+    width: 45%;
+    height: 100%;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.nifty_review_text1{
+    color: #FEAD10;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.nifty_review_text2{
+    color: white;
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+
+.nifty_review_text3{
+    font-weight: 400;
+    color: rgb(199, 195, 195);
+    font-size: 1.3rem;
+}
+
+.nifty_review_inner_right{
+    width: 90%;
+    height: 80%;
+    /* border: 1px solid white; */
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 50px;
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nifty_review_inner_right :nth-child(2){
+   color: white;
+}
+
+.nifty_review_inner_right :nth-child(3){
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: gray;
+}
+
+.nifty_review_inner_right :nth-child(4){
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: gray;
+}
+
+.nifty_review_inner_right :nth-child(5){
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: gray;
+}
+
+.nifty_review_inner_right :nth-child(6){
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.nifty_review_inner_right :nth-child(7){
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 400;
+}
+
+.nifty_review_inner_right :nth-child(8){
+    font-weight: 400;
+    color: gray;
+    font-size: 1.3rme;
+}
+
+.nifty_review_button{
+    width: 100%;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+}
+
+.nifty_review_button button{
+    height: 60px;
+    width: 200px;
+    font-size: 1.5rem;
+    background-image: linear-gradient(120deg, #040c63,#AB17DF);
+    color: white;
+    border-radius: 10px;
+}
+
+
+@media screen and (width<768px){
+    .nifty_review{
+        flex-direction: column;
+        height: 1300px;
+    }
+
+    .nifty_review_text2{
+        font-size: 3rem;
+    }
+
+    .nifty_review_left{
+        width: 100%;
+        height: 40%;
+    }
+
+    .nifty_review_right{
+        width: 100%;
+        height: 60%;
+    }
+}
+
+/* marchendise */
+
+.nifty_marchendise{
+    width: 100%;
+    height: 300px;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.nifty_marchendise :nth-child(1){
+    color: #FEAD10;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.nifty_marchendise :nth-child(2){
+    color: white;
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+.nifty_marchendise :nth-child(3){
+    color: gray;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.nifty_marchendise :nth-child(4){
+    color: gray;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.nifty_marchendise_cards{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 500px;
+    grid-gap: 20px;
+    padding: 20px;
+    /* border: 1px solid rgb(255, 255, 255); */
+}
+
+.nifty_marchendise_card{
+    /* border: 1px solid white; */
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    /* border: 1px solid rgba(255,255,255,0.18); */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.marchendise_heading{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.nifty_marchendise_card :nth-child(3){
+    color: yellow;
+}
+
+#price{
+    color: rgb(192, 192, 192);
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.nifty_marchendise_card button{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+     background-color: #AB17DF;
+     color: white;
+     font-weight: 500;
+     font-size: 1.3rem;
+     font-family: "Rajdhani", sans-serif;
+}
+
+@media screen and (width<768px){
+    .nifty_marchendise_cards{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,500px);
+    }
+
+    
+}
+
+@media screen and (width<500px){
+    .nifty_marchendise_cards{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,500px);
+    }
+}
+
+.blogs{
+    width: 100%;
+    height: 300px;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.blogs :nth-child(1){
+    color: #FEAD10;
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-family: "Rajdhani", sans-serif;
+}
+
+.blogs :nth-child(2){
+    color: white;
+    font-size: 5rem;
+    font-family: "Rajdhani", sans-serif;
+}
+
+.blogs :nth-child(3){
+    width: 50%;
+    color: gray;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    text-align: center;
+}
+
+@media screen and (width<768px){
+
+    .blogs{
+        height: 250px;
+    }
+    .blogs :nth-child(2){
+        font-size: 2rem;
+    }
+
+    .blogs :nth-child(3){
+        font-size: 1rem;
+    }
+}
+
+.blogs_cards{
+    width: 100%;
+    /* border: 1px solid white; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 500px;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.blogs_card{
+    /* border: 1px solid white; */
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    /* border: 1px solid rgba(255,255,255,0.18); */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog_card_img{
+    width: 100%;
+    height: 70%;
+    /* border: 1px solid white; */
+    border-radius: 10px;
+}
+
+.blogs_card :nth-child(2){
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 400;
+    font-family: "Rajdhani", sans-serif;
+    width: 80%;
+    text-align: center;
+}
+
+.blogs_card :nth-child(3){
+    font-size: 1.2rem;
+    color: gray;
+    font-weight: 400;
+}
+
+.blogs_card :nth-child(4){
+    font-size: 1.2rem;
+    color: #AB17DF;
+    font-weight: 500;
+}
+
+#blog_img1{
+    background-image: url("./images/post-nifty0-768x534.jpg");
+    background-size: cover;
+}
+
+#blog_img2{
+    background-image: url("./images/post-nifty0-7-768x534.jpg");
+    background-size: cover;
+}
+
+#blog_img3{
+    background-image: url("./images/post-nifty0-1-768x534.jpg");
+    background-size: cover;
+}
+
+@media screen and (width<768px){
+    .blogs_cards{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,500px);
+      
+    }
+}
+/* footer starts */
+.footer{
+    width: 100%;
+    height: 400px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-blend-mode:overlay;
+    background-image: linear-gradient(120deg,#4E10FF,#AB17DF ) , url("./images/noise-footer.png");
+    background-size: cover;
+    display: flex;
+    padding: 3%;
+    justify-content: space-between;
+}
+
+.footer1{
+    width: 40%;
+    height: 100%;
+    /* border: 1px solid white; */
+}
+
+.footer1 :nth-child(1){
+    color: #FEAD10;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.footer1 :nth-child(2){
+    color: white;
+}
+.footer1 :nth-child(3){
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.footer1 :nth-child(4){
+    width: 100%;
+    /* border: 1px solid black; */
+    height: 70px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer1 :nth-child(4) input{
+    height: 100%;
+    width: 65%;
+    padding-left: 30px;
+}
+
+::placeholder{
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.footer1 :nth-child(4) button{
+    width: 30%;
+    height: 100%;
+    margin: 0px;
+    background-image: linear-gradient(120deg,#1d30fd,#d545fc);
+    font-size: 1.3rem;
+}
+
+.footer2{
+    width: 30%;
+    height: 80%;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer_paragraph{
+    color: white;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.footer_icons{
+    color: white;
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid wheat; */
+    font-size: 1.5rem;
+}
+.footer3{
+    width: 25%;
+    height: 100%;
+    /* border: 1px solid white; */
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.footer3 h1{
+    color: white;
+    font-size: 1.5rem;
+}
+.footer3 ul{
+    /* border: 1px solid white; */
+    height: 65%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.footer3 li{
+    list-style: none;
+    font-weight: 500;
+    color: white;
+    font-size: 1.2rem;
+    margin: 0px;
+}
+
+@media screen and (width<768px){
+    .footer{
+        flex-direction: column;
+        height: 1000px;
+    }
+
+    .footer1{
+        width: 100%;
+    }
+
+    .footer2{
+        width: 100%;
+    }
+
+    .footer3{
+        width: 100%;
+    }
+}
